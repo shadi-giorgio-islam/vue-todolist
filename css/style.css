@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+a{
+  color: white;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  text-align: center;
+}
+.img-logo img{
+  height: 80px;
+  margin: 50px 0;
+}
+.container{
+  width: 60%;
+  margin: auto;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: left;
+  background-color: #001632;
+  color: white;
+}
+.container h2{
+  padding: 20px 0;
+}
+.container ul li{
+  padding: 20px 0;
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
