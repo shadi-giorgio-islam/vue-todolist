@@ -2,9 +2,14 @@ var app = new Vue({
   el: '#list',
   data: {
     todos: ['HTML5', 'CSS', 'JQUERY', 'JAVASCRIPT', 'SQL', 'PHP'],
+    todoInput: [],
     todosDelete: []
   },
   methods: {
+    addTodo(){
+      this.todos.push(this.todoInput);
+      this.todoInput.splice(0, 1);
+    },
     removeTodo(index){
       this.todosDelete.push(this.todos[index]);
       this.todos.splice(index, 1);

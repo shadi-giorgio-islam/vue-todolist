@@ -28,6 +28,17 @@ body{
   background-color: #001632;
   color: white;
 }
+.container input{
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.container button{
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: lightgrey;
+  color: #001632;
+  font-weight: 500;
+}
 .container h2{
   padding: 20px 0;
 }
