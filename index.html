@@ -22,7 +22,7 @@
     </ul>
     <h2>Done:</h2>
     <ul>
-      <li v-for='(done, index) in todosDelete'><p>{{done}}</p><div><a href="#"><i class="fas fa-trash-restore"></i></a></div></li>
+      <li v-for='(done, index) in todosDelete'><p>{{done}}</p><div><a href="#" @click='restoreTodo(index)'><i class="fas fa-trash-restore"></i></a></div></li>
     </ul>
   </div>
   <!-- javascript -->
