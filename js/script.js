@@ -19,6 +19,13 @@ var app = new Vue({
         this.todosDelete.push(this.todos[0]);
         this.todos.splice(0, 1);
       }
+    },
+    restoreAll(){
+      const length = this.todosDelete.length;
+      for (let i = 0; i < length; i++) {
+        this.todos.push(this.todosDelete[0]);
+        this.todosDelete.splice(0, 1);
+      }
     }
   }
 });
