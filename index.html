@@ -28,7 +28,7 @@
       <a href="">Restore all</a>
     </div>
     <ul>
-      <li v-for='(done, index) in todosDelete'><p>{{done}}</p><div><a href="#" @click='restoreTodo(index)'><i class="fas fa-trash-restore"></i></a></div></li>
+      <li v-for='(done, index) in todosDelete'><p>{{done}}</p><div><a href="#" @click='restoreTodo(index)'><i class="fas fa-trash-restore"></i></a><a href="#" @click='removeDefinitely(index)'><i class="fas fa-times"></i></a></div></li>
     </ul>
   </div>
   <!-- javascript -->

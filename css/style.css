@@ -49,3 +49,6 @@ body{
   justify-content: space-between;
   align-items: center;
 }
+.container ul li i{
+  margin-left: 20px;
+}

@@ -26,6 +26,9 @@ var app = new Vue({
         this.todos.push(this.todosDelete[0]);
         this.todosDelete.splice(0, 1);
       }
+    },
+    removeDefinitely(index){
+      this.todosDelete.splice(index, 1);
     }
   }
 });
