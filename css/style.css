@@ -8,6 +8,7 @@ ul{
 }
 a{
   color: white;
+  text-decoration: none;
 }
 body{
   font-family: 'Roboto', sans-serif;
@@ -29,6 +30,17 @@ body{
 }
 .container h2{
   padding: 20px 0;
+}
+.container .btn{
+  text-align: right;
+  padding: 20px 0;
+}
+.container .btn a{
+  background-color: #0CD977;
+  color: #001632;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 .container ul li{
   padding: 20px 0;
