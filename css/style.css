@@ -53,6 +53,10 @@ body{
   padding: 10px 20px;
   border-radius: 10px;
 }
+.container .btn:last-child a{
+  background-color: rgb(198, 38, 38);
+  color: white;
+}
 .container ul li{
   padding: 20px 0;
   border-bottom: 1px solid white;

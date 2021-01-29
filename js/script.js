@@ -37,6 +37,9 @@ var app = new Vue({
     removeDefinitely(index){
       this.todosDelete.splice(index, 1);
     },
+    removeDefinitelyall(index){
+      this.todosDelete.splice(index);
+    },
     changeTodo(index){
       const change = prompt('Inserisci nuovo to do');
       this.todos.push(change);
