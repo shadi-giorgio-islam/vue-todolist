@@ -23,7 +23,7 @@
     <input v-model='todoInput' type="text" placeholder="Inserisci to do">
     <button @click='addTodo'>Invia</button>
     <ul>
-      <li v-for='(todo, index) in todos'><p>{{todo}}</p><div><a href="#" @click='removeTodo(index)'><i class="fas fa-trash-alt"></i></a></div></li>
+      <li v-for='(todo, index) in todos'><p>{{todo}}</p><div><a href="#" @click='changeTodo(index)'><i class="fas fa-redo"></i></a><a href="#" @click='removeTodo(index)'><i class="fas fa-trash-alt"></i></a></div></li>
     </ul>
     <h2>Done:</h2>
     <div class="btn">

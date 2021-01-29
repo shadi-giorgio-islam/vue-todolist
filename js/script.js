@@ -5,10 +5,12 @@ var app = new Vue({
     todoInput: [],
     todosDelete: []
   },
+  created(){
+    console.log(this.todos);
+  },
   methods: {
     addTodo(){
       this.todos.push(this.todoInput);
-      this.todoInput.splice(0, 1);
     },
     removeTodo(index){
       this.todosDelete.push(this.todos[index]);
@@ -34,6 +36,11 @@ var app = new Vue({
     },
     removeDefinitely(index){
       this.todosDelete.splice(index, 1);
+    },
+    changeTodo(index){
+      const change = prompt('Inserisci nuovo to do');
+      this.todos.push(change);
+      this.todos.splice(index, 1);
     }
   }
 });
